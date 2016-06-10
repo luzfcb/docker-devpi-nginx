@@ -7,7 +7,7 @@ git clone https://github.com/luzfcb/docker-devpi-nginx.git
 ```
 
 
-Edit the `docker-compose.yml` and change value if `DEVPI_PASSWORD`
+Edit the `docker-compose.yml` and change value of `DEVPI_PASSWORD`
 
 
 ```bash
