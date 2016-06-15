@@ -16,5 +16,5 @@ services:
         volumes_from:
             - web
         ports:
-            - "8000:80"
+            - "4040:80"
         
