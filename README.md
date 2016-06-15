@@ -20,7 +20,7 @@ docker-compose up -d
 wait build a conteiner
 
 
-Next, configure pip to use the devpi server:
+Next, configure user machines to pip use the devpi server:
 
 create `pip.conf` in `$HOME/.config/pip/`
 
