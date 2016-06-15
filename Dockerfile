@@ -10,10 +10,15 @@ RUN  \
     apt-get -y upgrade && \
     apt-get -y autoremove && \
     xargs apt-get -y -q install < /usr/src/app/system-requirements.txt && \
-    apt-get clean
+    apt-get -y autoremove && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 
 COPY requirements.txt /usr/src/app/requirements.txt
-RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
+RUN \
+    pip install --no-cache-dir pip setuptools -U && \
+    pip install --no-cache-dir -r /usr/src/app/requirements.txt -U
 
 COPY create-user.sh /sbin/create-user
 
