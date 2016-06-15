@@ -36,7 +36,7 @@ add:
 ```bash
 
 [global]
-index-url = http://root:DEVPI_PASSWORD@DOCKER_SERVER_EXTERNAL_IP:8000/root/pypi/+simple/
+index-url = http://root:DEVPI_PASSWORD@DOCKER_SERVER_EXTERNAL_IP:4040/root/pypi/+simple/
 trusted-host = DOCKER_SERVER_EXTERNAL_IP
 
 
