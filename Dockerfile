@@ -1,15 +1,15 @@
-FROM python:2.7.10-slim
+FROM python:3.5.2-slim
 MAINTAINER Edu Herraiz <gshark@gmail.com>
 
 VOLUME /data
 
 # Things required for a python/pip environment
-COPY system-requirements.txt /usr/src/app/system-requirements.txt
+COPY system-requirements.apt /usr/src/app/system-requirements.apt
 RUN  \
     apt-get update && \
     apt-get -y upgrade && \
     apt-get -y autoremove && \
-    xargs apt-get -y -q install < /usr/src/app/system-requirements.txt && \
+    xargs apt-get -y -q install < /usr/src/app/system-requirements.apt && \
     apt-get -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
