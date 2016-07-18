@@ -1,4 +1,6 @@
 
+[![Updates](https://pyup.io/repos/github/luzfcb/docker-devpi-nginx/shield.svg)](https://pyup.io/repos/github/luzfcb/docker-devpi-nginx/)
+
 
 REQUIRE: Docker >= 1.11.2 and docker-compose >= 1.7.0
 
