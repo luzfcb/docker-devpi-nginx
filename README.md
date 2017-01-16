@@ -46,7 +46,7 @@ trusted-host = DOCKER_SERVER_EXTERNAL_IP
 
 one line version:
 ```bash
-mkdir -p ~/.config/pip/ ; echo -e "[global]\nindex-url = http://root:test@DEVPI_PASSWORD@DOCKER_SERVER_EXTERNAL_IP/root/pypi/+simple/\ntrusted-host = DOCKER_SERVER_EXTERNAL_IP\nextra-index-url = https://pypi.python.org/simple" | tee ~/.config/pip/pip.conf
+mkdir -p ~/.config/pip/ ; echo -e "[global]\nindex-url = http://root:DEVPI_PASSWORD@DOCKER_SERVER_EXTERNAL_IP/root/pypi/+simple/\ntrusted-host = DOCKER_SERVER_EXTERNAL_IP\nextra-index-url = https://pypi.python.org/simple" | tee ~/.config/pip/pip.conf
 
 ```
 
